@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VocaVoice — AI Vocabulary Coach</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">Voca<span>Voice</span></div>
+      <p class="tagline">Your voice-first vocabulary coach</p>
+    </header>
+
+    <section class="card hero">
+      <div class="word-row">
+        <div>
+          <p class="label">TODAY'S WORD</p>
+          <h1 id="word">Meticulous</h1>
+          <p id="pronunciation">/mə-TIK-yuh-lus/</p>
+        </div>
+        <button id="speakWord" class="icon-btn" title="Hear pronunciation">🔊</button>
+      </div>
+
+      <div class="meaning">
+        <h3>Meaning</h3>
+        <p id="meaningText">Very careful and precise about details.</p>
+      </div>
+
+      <div class="example">
+        <h3>Example</h3>
+        <p id="exampleText">She is meticulous when checking her project before submission.</p>
+      </div>
+
+      <div class="controls">
+        <button id="nextWord" class="secondary">Next Word →</button>
+        <button id="startBtn" class="primary">🎙 Start Speaking</button>
+      </div>
+
+      <p id="status" class="status">Click “Start Speaking” and answer the coach.</p>
+    </section>
+
+    <section class="card conversation">
+      <div class="coach">
+        <div class="avatar">AI</div>
+        <div>
+          <p class="label">COACH</p>
+          <p id="coachText">Can you use <strong>meticulous</strong> in your own sentence?</p>
+        </div>
+      </div>
+
+      <div class="transcript-box">
+        <p class="label">YOUR RESPONSE</p>
+        <p id="transcript">Your spoken answer will appear here...</p>
+      </div>
+
+      <div id="feedback" class="feedback hidden">
+        <h3 id="feedbackTitle"></h3>
+        <p id="feedbackText"></p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><strong id="score">0</strong><span>Score</span></div>
+      <div class="stat"><strong id="learned">0</strong><span>Words practiced</span></div>
+      <div class="stat"><strong id="streak">0</strong><span>Current streak</span></div>
+    </section>
+
+    <footer>
+      <p>Built as a voice-first vocabulary learning prototype.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
